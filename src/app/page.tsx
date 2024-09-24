@@ -1,12 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import "../styles/front.css";
 import Navbar from "./components/navbar";
+import { Image } from "antd";
 import { BackgroundBeams } from "./components/hero";
 import { Button } from "./components/connectMetamask";
 import { motion } from "framer-motion";
 import { GithubOutlined , LinkedinOutlined , TwitterOutlined }  from "@ant-design/icons";
+import MozillaLogo from "../assets/MOZILLA White.png";
 import { World , GlobeConfig } from "./components/globe";
 import { Meteors } from "./components/cards";
 import { StickyScrollRevealDemo } from "./components/project_showcase";
@@ -412,10 +413,11 @@ const globeConfig = {
   return (
     <div className="mainDiv">
       {/* <Navbar /> */}
-      <div className="relative min-h-screen bg-black text-white">
+      <div className="relative min-h-screen bg-black text-white mt-30">
         <BackgroundBeams className="absolute inset-0 z-0" />
         <div className="relative z-10 flex flex-col items-center justify-center h-screen">
           <div className="hero BigText text-center mb-8">
+            <Image src={MozillaLogo.src} style={{ width : "400px"}}/>
             <h1 className="text mb-[-20px]">Ignite Your Passion for Technology</h1>
             <h1>Join Mozilla Phoenix Club at JUET – Fueling innovation, creativity, and collaboration in the tech world</h1>
             <h1 className="text2 mt-4">
@@ -604,12 +606,12 @@ const globeConfig = {
 
       
 
-<footer className="bg-black dark:bg-gray-900 w-1/1">
-    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+<footer className="bg-black dark:bg-gray-900 w-full pt-20">
+    <div className="mx-auto px-10 px-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com/" className="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
+                  <Image src={MozillaLogo.src} style={{ height : "70px"}} className="me-3" alt="FlowBite Logo"/>
                   <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Mozilla</span>
               </a>
           </div>
