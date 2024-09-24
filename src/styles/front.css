@@ -54,9 +54,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: rgb(186, 255, 248);
-    /* Keep the text color white */
     background-size: 200%;
-    /* Expand background for animation effect */
     animation: text-animate 10s linear infinite;
 }
 
@@ -81,4 +79,13 @@
     width: 80%;
     font-weight: 600;
     font-size: 60px;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }
