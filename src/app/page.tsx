@@ -448,8 +448,8 @@ const globeConfig = {
           </div>
         </Flex>
 
-        <div className="flex flex-col items-center justify-center py-12 md:py-20 h-[50vh] md:h-[60vh] lg:h-[70vh] bg-black relative w-full">
-          <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full px-4">
+        <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto bg-black relative w-full" style={{ marginTop : "-200px"}}>
+          <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
             <motion.div
               initial={{
                 opacity: 0,
