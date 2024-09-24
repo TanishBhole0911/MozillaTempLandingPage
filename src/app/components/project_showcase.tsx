@@ -2,26 +2,18 @@
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
+import fourO4 from "../../assets/fourO4.jpeg";
+import hacktober from "../../assets/Hacktober.png";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "404: Treasure Not Found",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    "A spin on our classic treasure hunt with an unexpected twist! Participants will need to navigate through a maze of code-based puzzles, bugs, and logic traps to find the elusive treasure. Think you have what it takes to crack the code?",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
-      </div>
-    ),
-  },
-  {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+     <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src={fourO4.src}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -31,7 +23,7 @@ const content = [
     ),
   },
   {
-    title: "Version control",
+    title: "Contribution To Open Source",
     description:
       "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
     content: (
@@ -41,19 +33,25 @@ const content = [
     ),
   },
   {
-    title: "Running out of content",
+    title: "Hacktoberfest 2024",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Hacktoberfest is back and better than ever! Join us for a month-long celebration of open source software and contribute to your favorite projects. Whether you're a seasoned pro or just starting out, there's something for everyone. Get involved, learn new skills, and earn some cool swag along the way!",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src={hacktober.src}
+          width={100}
+          height={100}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
 ];
 export function StickyScrollRevealDemo() {
   return (
-    <div className="p-10 w-1/1">
+    <div>
       <StickyScroll content={content} />
     </div>
   );
