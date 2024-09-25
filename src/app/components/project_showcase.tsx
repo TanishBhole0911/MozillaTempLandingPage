@@ -3,7 +3,7 @@ import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import fourO4 from "../../assets/fourO4.jpeg";
-import hacktober from "../../assets/hacktober.png";
+import hacktober from "../../assets/Hacktober.png";
 import VersionControl from "../../assets/VersionControl.jpeg";
 
 const content = [
