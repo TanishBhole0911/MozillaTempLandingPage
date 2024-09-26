@@ -8,7 +8,6 @@ import { Button } from "./components/connectMetamask";
 import { motion } from "framer-motion";
 import { GithubOutlined, LinkedinOutlined, TwitterOutlined } from "@ant-design/icons";
 import MozillaLogo from "../assets/MOZILLA White.png";
-import { World, GlobeConfig } from "./components/globe";
 import { Meteors } from "./components/cards";
 import { StickyScrollRevealDemo } from "./components/project_showcase";
 
@@ -437,41 +436,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <section className="section bg-black text-white p-4 md:p-8 relative z-20">
-        <Flex justify="center" align="center">
-          <div className="hero BigText text-center" style={{ width: "100%", maxWidth: "1200px" }}>
-            <h2 className="text-globe mb-4 z-20 text-3xl md:text-4xl lg:text-5xl">Explore Our Global Tech Impact</h2>
-            <p className="mt-4 mb-0 z-20 text-base md:text-lg">
-              At Mozilla Phoenix Club JUET, we are deeply committed to the principles of open-source collaboration. Our GitHub Globe highlights the contributions made by our passionate members, connecting innovators across the world. Through code, knowledge sharing, and community-driven projects, we actively contribute to the global open-source ecosystem. Each pin on the globe represents a location where our members have made impactful contributions, furthering the open-source movement and building solutions that benefit everyone.
-            </p>
-          </div>
-        </Flex>
-
-        <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto bg-black relative w-full" style={{ marginTop: "-200px" }}>
-          <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 1,
-              }}
-              className="div"
-            >
-            </motion.div>
-            <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none select-none z-40" />
-            <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-              <World data={sampleArcs} globeConfig={globeConfig} />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="section bg-black text-white relative">
         <div className="hero BigText text-center">
