@@ -10,10 +10,11 @@ import { GithubOutlined, LinkedinOutlined, TwitterOutlined } from "@ant-design/i
 import MozillaLogo from "../assets/MOZILLA White.png";
 import { Meteors } from "./components/cards";
 import { StickyScrollRevealDemo } from "./components/project_showcase";
-
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
   const handleClick = () => {
-    alert("Button clicked!");
+    router.push("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   };
 
 
@@ -566,7 +567,7 @@ export default function Home() {
         <div className="mx-auto px-10 px-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center justify-around">
+              <a href="#" className="flex items-center justify-around">
                 <Image src={MozillaLogo.src} preview={false} style={{ height: "100px" }} className="me-3" alt="FlowBite Logo" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Mozilla</span>
               </a>
@@ -587,7 +588,7 @@ export default function Home() {
                 <h2 className="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                    <a href="https://www.instagram.com/mpcjuet/" className="hover:underline ">Instagram</a>
                   </li>
                   <li>
                     <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
